@@ -1,0 +1,55 @@
+.footer {
+  border-top: 1px solid var(--line);
+  padding: 2.25rem 0 2.75rem;
+}
+
+.inner {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.mark {
+  margin: 0 0 0.35rem;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  font-size: 1.05rem;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.15rem 1.35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.links a,
+.email a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--text);
+  text-underline-offset: 0.18em;
+  text-decoration-color: color-mix(in srgb, var(--text) 35%, transparent);
+}
+
+.links a:hover,
+.email a:hover {
+  text-decoration-color: var(--text);
+}
+
+.email,
+.copy {
+  margin: 0;
+  color: var(--muted);
+}
+
+.email a {
+  color: var(--muted);
+  min-height: 36px;
+}
+
+.copy {
+  margin-top: 0.15rem;
+}

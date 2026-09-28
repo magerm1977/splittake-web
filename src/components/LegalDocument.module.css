@@ -1,0 +1,59 @@
+.article {
+  width: min(42rem, 100%);
+  padding-block: clamp(2.4rem, 6vw, 4.5rem) clamp(3.5rem, 8vw, 5.5rem);
+}
+
+.article h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  font-weight: 600;
+  text-wrap: balance;
+}
+
+.date {
+  margin: 0.85rem 0 0;
+  color: var(--muted);
+}
+
+.article h2 {
+  margin: 2.35rem 0 0.65rem;
+  font-size: 1.28rem;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+  font-weight: 600;
+  text-wrap: balance;
+}
+
+.article p,
+.article li {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+
+.article p {
+  margin: 0.85rem 0 0;
+}
+
+.article ul,
+.article ol {
+  margin: 0.75rem 0 0;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.article a {
+  text-underline-offset: 0.16em;
+  text-decoration-color: color-mix(in srgb, var(--text) 40%, transparent);
+}
+
+.article a:hover {
+  text-decoration-color: var(--text);
+}
+
+.article address {
+  margin: 0.85rem 0 0;
+  font-style: normal;
+}

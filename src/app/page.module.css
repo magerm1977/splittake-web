@@ -1,0 +1,195 @@
+.hero {
+  padding-block: clamp(3.2rem, 8vw, 6.4rem) clamp(3.4rem, 7vw, 5.5rem);
+}
+
+.heroInner {
+  display: grid;
+  gap: 2.75rem;
+  align-items: center;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.98rem;
+}
+
+.hero h1 {
+  margin: 0.7rem 0 0;
+  max-width: 10.5em;
+  font-size: clamp(2.2rem, 4.8vw, 3.7rem);
+  line-height: 1.04;
+  letter-spacing: -0.036em;
+  font-weight: 600;
+}
+
+.line {
+  display: block;
+}
+
+.rule {
+  width: 3.25rem;
+  height: 3px;
+  margin: 1.35rem 0 0;
+  border: 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #ffb089, #ff5c3a 50%, #ff3d78);
+}
+
+.lead {
+  margin: 1.15rem 0 0;
+  max-width: 38rem;
+  font-size: clamp(1.05rem, 1.5vw, 1.22rem);
+  line-height: 1.55;
+}
+
+.cta {
+  margin-top: 1.6rem;
+}
+
+.facts {
+  display: grid;
+  gap: 0.2rem;
+  margin: 1.2rem 0 0;
+  padding: 0;
+  list-style: none;
+  color: var(--muted);
+}
+
+.feature {
+  border-top: 1px solid var(--line);
+}
+
+.featureInner {
+  display: grid;
+  gap: 0.45rem;
+  padding-block: clamp(2.15rem, 4.6vw, 3.15rem);
+}
+
+.index {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+}
+
+.feature h2,
+.plans h2,
+.close h2 {
+  margin: 0;
+  font-size: clamp(1.65rem, 3vw, 2.3rem);
+  line-height: 1.12;
+  letter-spacing: -0.032em;
+  font-weight: 600;
+}
+
+.feature .index {
+  margin: 0;
+}
+
+.feature p,
+.intro,
+.note,
+.close p {
+  margin: 0.85rem 0 0;
+  max-width: 40rem;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+.plans {
+  border-top: 1px solid var(--line);
+  padding-block: clamp(2.6rem, 6vw, 4.4rem);
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.6rem;
+}
+
+.plan {
+  margin: 0;
+  padding: 1.45rem 1.35rem 1.5rem;
+  border: 1px solid var(--line);
+  border-radius: 1.5rem;
+  background: var(--elevated);
+}
+
+.plan h3 {
+  margin: 0;
+  font-size: 1.35rem;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+}
+
+.plan ul {
+  margin: 1rem 0 0;
+  padding-left: 1.15rem;
+  display: grid;
+  gap: 0.5rem;
+  line-height: 1.45;
+}
+
+.plan li::marker {
+  color: var(--muted);
+}
+
+.planPro {
+  border-color: transparent;
+  background:
+    linear-gradient(var(--elevated), var(--elevated)) padding-box,
+    linear-gradient(145deg, #ffc2a8, #ff6a3d 46%, #ff3d78) border-box;
+}
+
+.note {
+  margin-top: 1.15rem;
+  color: var(--muted);
+}
+
+.close {
+  border-top: 1px solid var(--line);
+  padding-block: clamp(3.4rem, 8vw, 5.8rem);
+}
+
+.close .cta {
+  margin-top: 1.4rem;
+}
+
+@media (min-width: 900px) {
+  .heroInner {
+    grid-template-columns: minmax(0, 1.15fr) minmax(260px, 0.85fr);
+    gap: 3rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.1rem;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .heroCopy,
+  .heroArt {
+    animation: rise 700ms ease both;
+  }
+
+  .heroArt {
+    animation-delay: 80ms;
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

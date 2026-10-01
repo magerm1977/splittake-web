@@ -4,16 +4,20 @@ import styles from "./LegalDocument.module.css";
 
 export function LegalDocument({
   title,
+  date = effectiveDate,
+  dateTime = effectiveDateIso,
   children,
 }: {
   title: string;
+  date?: string;
+  dateTime?: string;
   children: ReactNode;
 }) {
   return (
     <article className={styles.article}>
       <h1>{title}</h1>
       <p className={styles.date}>
-        Effective <time dateTime={effectiveDateIso}>{effectiveDate}</time>
+        Effective <time dateTime={dateTime}>{date}</time>
       </p>
       {children}
     </article>

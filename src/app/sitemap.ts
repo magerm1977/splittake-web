@@ -6,7 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     { url: siteUrl, lastModified },
-    { url: `${siteUrl}/privacy`, lastModified },
+    { url: `${siteUrl}/privacy`, lastModified: new Date("2026-10-01") },
     { url: `${siteUrl}/terms`, lastModified },
   ];
 }

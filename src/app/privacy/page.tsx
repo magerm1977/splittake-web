@@ -28,7 +28,11 @@ export const metadata: Metadata = {
 export default function PrivacyPage() {
   return (
     <div className="wrap">
-      <LegalDocument title="Privacy Policy">
+      <LegalDocument
+        title="Privacy Policy"
+        date="October 1, 2026"
+        dateTime="2026-10-01"
+      >
         <p>
           This policy explains how information is handled when you use the{" "}
           {siteName} app for iPhone and when you visit {siteUrl.replace("https://", "")}.
@@ -58,6 +62,36 @@ export default function PrivacyPage() {
           iOS asks before those capabilities can be used. You can change camera
           and microphone access later in iOS Settings. If access is off, that
           part of a recording will not be available.
+        </p>
+
+        <h2>Camera and face data</h2>
+        <p>
+          SplitTake lets you record video with your device’s front-facing
+          camera while you record your screen. Recording starts only when you
+          choose to record. SplitTake does not use facial recognition, identify
+          individuals, extract facial geometry, create biometric identifiers,
+          track faces, or otherwise analyze faces.
+        </p>
+        <p>
+          The front-camera video is saved on your device as part of the
+          recording. The screen recording can also show the floating camera
+          window because that window is part of the screen you chose to record.
+        </p>
+        <p>
+          SplitTake does not upload camera video or face imagery to a server
+          operated by SparrowLaunch. Camera video and face imagery are not sent
+          to RevenueCat or to an analytics or crash-reporting service.
+        </p>
+        <p>
+          Recordings remain on your device until you delete them in SplitTake
+          or choose to export or share them through the iOS share sheet. If you
+          share or export a recording, the destination you choose handles that
+          copy under its own terms and privacy policy.
+        </p>
+        <p>
+          A device backup, such as an iCloud or computer backup, may include
+          SplitTake’s locally stored recordings. SplitTake does not separately
+          upload or control those device backups.
         </p>
 
         <h2>Recordings stay on your iPhone</h2>
